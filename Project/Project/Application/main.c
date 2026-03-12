@@ -9,7 +9,6 @@
 
 volatile uint8_t rx_input = 0;
 volatile bool msg_in = false;
-volatile bool motor3_toggle = false;
 
 
 ISR (USART_RX_vect){ /*interrupt to get serial data*/
@@ -26,7 +25,7 @@ int main(void)
     motron_init(); /*setsup motorcontroller with default settings*/
     uart_init(104); /*setup uart with 9600 baud*/
     sei();
-    
+    bool motor3_toggle = false;
     while (1) {   
 
         if (msg_in){
@@ -49,7 +48,7 @@ int main(void)
                 set_motor_2_speed(800);
             }
             
-            _delay_ms(250);
+            _delay_ms(250); /*fix thiis!*/
             set_motor_1_speed(0);
             set_motor_2_speed(0);
 

@@ -2,5 +2,9 @@
 # Automatically-generated file. Do not edit or delete the file
 ################################################################################
 
-main.c
+Application\main.c
+
+Drivers\Drivers.c
+
+SRC\Motron.c
 

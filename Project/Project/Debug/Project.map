@@ -12,6 +12,7 @@ Discarded input sections
  .text          0x00000000        0x0 Application/main.o
  .data          0x00000000        0x0 Application/main.o
  .bss           0x00000000        0x0 Application/main.o
+ .bss.msg_in    0x00000000        0x1 Application/main.o
  .text          0x00000000        0x0 Drivers/Drivers.o
  .data          0x00000000        0x0 Drivers/Drivers.o
  .bss           0x00000000        0x0 Drivers/Drivers.o
@@ -182,7 +183,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0x5fa
+.text           0x00000000      0x656
  *(.vectors)
  .vectors       0x00000000       0x68 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
                 0x00000000                __vector_default
@@ -267,57 +268,57 @@ END GROUP
                 0x00000090                . = ALIGN (0x2)
  *(.text.*)
  .text.__vector_18
-                0x00000090       0x36 Application/main.o
+                0x00000090       0x9c Application/main.o
                 0x00000090                __vector_18
- .text.main     0x000000c6       0xf4 Application/main.o
-                0x000000c6                main
+ .text.main     0x0000012c       0xe2 Application/main.o
+                0x0000012c                main
  .text.i2c_init
-                0x000001ba       0x12 Drivers/Drivers.o
-                0x000001ba                i2c_init
+                0x0000020e       0x12 Drivers/Drivers.o
+                0x0000020e                i2c_init
  .text.i2c_start
-                0x000001cc       0x10 Drivers/Drivers.o
-                0x000001cc                i2c_start
+                0x00000220       0x10 Drivers/Drivers.o
+                0x00000220                i2c_start
  .text.i2c_write
-                0x000001dc       0x14 Drivers/Drivers.o
-                0x000001dc                i2c_write
+                0x00000230       0x14 Drivers/Drivers.o
+                0x00000230                i2c_write
  .text.i2c_stop
-                0x000001f0        0x8 Drivers/Drivers.o
-                0x000001f0                i2c_stop
+                0x00000244        0x8 Drivers/Drivers.o
+                0x00000244                i2c_stop
  .text.uart_init
-                0x000001f8       0x12 Drivers/Drivers.o
-                0x000001f8                uart_init
+                0x0000024c       0x12 Drivers/Drivers.o
+                0x0000024c                uart_init
  .text.motron_send
-                0x0000020a       0x3a SRC/Motron.o
-                0x0000020a                motron_send
+                0x0000025e       0x3a SRC/Motron.o
+                0x0000025e                motron_send
  .text.motron_reinitialize
-                0x00000244       0x1c SRC/Motron.o
-                0x00000244                motron_reinitialize
+                0x00000298       0x1c SRC/Motron.o
+                0x00000298                motron_reinitialize
  .text.max_accl_decel_m1
-                0x00000260       0xca SRC/Motron.o
-                0x00000260                max_accl_decel_m1
+                0x000002b4       0xcc SRC/Motron.o
+                0x000002b4                max_accl_decel_m1
  .text.max_accl_decel_m2
-                0x0000032a       0xca SRC/Motron.o
-                0x0000032a                max_accl_decel_m2
+                0x00000380       0xca SRC/Motron.o
+                0x00000380                max_accl_decel_m2
  .text.max_accl_decel_m3
-                0x000003f4       0xca SRC/Motron.o
-                0x000003f4                max_accl_decel_m3
+                0x0000044a       0xd0 SRC/Motron.o
+                0x0000044a                max_accl_decel_m3
  .text.motron_init
-                0x000004be       0x7e SRC/Motron.o
-                0x000004be                motron_init
+                0x0000051a       0x7e SRC/Motron.o
+                0x0000051a                motron_init
  .text.set_motor_1_speed
-                0x0000053c       0x3e SRC/Motron.o
-                0x0000053c                set_motor_1_speed
+                0x00000598       0x3e SRC/Motron.o
+                0x00000598                set_motor_1_speed
  .text.set_motor_2_speed
-                0x0000057a       0x3e SRC/Motron.o
-                0x0000057a                set_motor_2_speed
+                0x000005d6       0x3e SRC/Motron.o
+                0x000005d6                set_motor_2_speed
  .text.set_motor_3_speed
-                0x000005b8       0x3e SRC/Motron.o
-                0x000005b8                set_motor_3_speed
-                0x000005f6                . = ALIGN (0x2)
+                0x00000614       0x3e SRC/Motron.o
+                0x00000614                set_motor_3_speed
+                0x00000652                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x000005f6        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
-                0x000005f6                _exit
-                0x000005f6                exit
+ .fini9         0x00000652        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+                0x00000652                _exit
+                0x00000652                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -336,11 +337,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x000005f6        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x00000652        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
-                0x000005fa                _etext = .
+                0x00000656                _etext = .
 
-.data           0x00800100        0x0 load address 0x000005fa
+.data           0x00800100        0x0 load address 0x00000656
                 [!provide]                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -352,24 +353,28 @@ END GROUP
                 0x00800100                _edata = .
                 [!provide]                PROVIDE (__data_end, .)
 
-.bss            0x00800100        0x2
+.bss            0x00800100        0x5
                 0x00800100                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.msg_in    0x00800100        0x1 Application/main.o
-                0x00800100                msg_in
- .bss.rx_input  0x00800101        0x1 Application/main.o
-                0x00800101                rx_input
+ .bss.uart_command_counter
+                0x00800100        0x1 Application/main.o
+                0x00800100                uart_command_counter
+ .bss.uart_command
+                0x00800101        0x3 Application/main.o
+                0x00800101                uart_command
+ .bss.rx_input  0x00800104        0x1 Application/main.o
+                0x00800104                rx_input
  *(COMMON)
-                0x00800102                PROVIDE (__bss_end, .)
-                0x000005fa                __data_load_start = LOADADDR (.data)
-                0x000005fa                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800105                PROVIDE (__bss_end, .)
+                0x00000656                __data_load_start = LOADADDR (.data)
+                0x00000656                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800102        0x0
+.noinit         0x00800105        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800102                _end = .
+                0x00800105                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -448,48 +453,48 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x119d
+.debug_info     0x00000000     0x107d
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_info    0x000005f4      0x30d Application/main.o
- .debug_info    0x00000901       0xfd Drivers/Drivers.o
- .debug_info    0x000009fe      0x79f SRC/Motron.o
+ .debug_info    0x000005f4      0x1ee Application/main.o
+ .debug_info    0x000007e2       0xfd Drivers/Drivers.o
+ .debug_info    0x000008df      0x79e SRC/Motron.o
 
-.debug_abbrev   0x00000000      0x8ce
+.debug_abbrev   0x00000000      0x86d
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_abbrev  0x000005a2      0x140 Application/main.o
- .debug_abbrev  0x000006e2       0xa1 Drivers/Drivers.o
- .debug_abbrev  0x00000783      0x14b SRC/Motron.o
+ .debug_abbrev  0x000005a2       0xdf Application/main.o
+ .debug_abbrev  0x00000681       0xa1 Drivers/Drivers.o
+ .debug_abbrev  0x00000722      0x14b SRC/Motron.o
 
-.debug_line     0x00000000      0x7ff
+.debug_line     0x00000000      0x781
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x134 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_line    0x00000134      0x22f Application/main.o
- .debug_line    0x00000363      0x140 Drivers/Drivers.o
- .debug_line    0x000004a3      0x35c SRC/Motron.o
+ .debug_line    0x00000134      0x1b1 Application/main.o
+ .debug_line    0x000002e5      0x140 Drivers/Drivers.o
+ .debug_line    0x00000425      0x35c SRC/Motron.o
 
-.debug_frame    0x00000000      0x290
+.debug_frame    0x00000000      0x284
  *(.debug_frame)
- .debug_frame   0x00000000       0x50 Application/main.o
- .debug_frame   0x00000050       0x64 Drivers/Drivers.o
- .debug_frame   0x000000b4      0x1dc SRC/Motron.o
+ .debug_frame   0x00000000       0x44 Application/main.o
+ .debug_frame   0x00000044       0x64 Drivers/Drivers.o
+ .debug_frame   0x000000a8      0x1dc SRC/Motron.o
 
-.debug_str      0x00000000      0x665
+.debug_str      0x00000000      0x63c
  *(.debug_str)
  .debug_str     0x00000000      0x208 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_str     0x00000208      0x207 Application/main.o
-                                0x23b (size before relaxing)
- .debug_str     0x0000040f       0x3c Drivers/Drivers.o
+ .debug_str     0x00000208      0x1e7 Application/main.o
+                                0x21b (size before relaxing)
+ .debug_str     0x000003ef       0x3c Drivers/Drivers.o
                                 0x19f (size before relaxing)
- .debug_str     0x0000044b      0x21a SRC/Motron.o
+ .debug_str     0x0000042b      0x211 SRC/Motron.o
                                 0x3d1 (size before relaxing)
 
-.debug_loc      0x00000000      0x7c4
+.debug_loc      0x00000000      0x743
  *(.debug_loc)
- .debug_loc     0x00000000       0xbd Application/main.o
- .debug_loc     0x000000bd       0x2d Drivers/Drivers.o
- .debug_loc     0x000000ea      0x6da SRC/Motron.o
+ .debug_loc     0x00000000       0x3c Application/main.o
+ .debug_loc     0x0000003c       0x2d Drivers/Drivers.o
+ .debug_loc     0x00000069      0x6da SRC/Motron.o
 
 .debug_macinfo
  *(.debug_macinfo)

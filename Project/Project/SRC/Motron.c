@@ -43,7 +43,7 @@ void max_accl_decel_m1(uint16_t accel, uint16_t decel){
     motron_send(max_accel_m1_forward, sizeof max_accel_m1_forward);                   /*max accel motor 1*/
     uint8_t max_accel_m1_reverse[] = {0x9c,motor1,0x0c,(accel & 0x7f),((accel>>7)& 0x7f)};
     motron_send(max_accel_m1_reverse, sizeof max_accel_m1_reverse);                   /*max accel motor 1*/
-    uint8_t max_decel_m1_forward[] = {0x9c,motor1,0x0e,(accel & 0x7f),((decel>>7)& 0x7f)};
+    uint8_t max_decel_m1_forward[] = {0x9c,motor1,0x0e,(decel & 0x7f),((decel>>7)& 0x7f)};
     motron_send(max_decel_m1_forward, sizeof max_decel_m1_forward);                   /*max decel motor 1*/
     uint8_t max_decel_m1_reverse[] = {0x9c,motor1,0x10,(decel & 0x7f),((decel>>7)& 0x7f)};
     motron_send(max_decel_m1_reverse, sizeof max_decel_m1_reverse);                   /*max decel motor 1*/
@@ -65,7 +65,7 @@ void max_accl_decel_m3(uint16_t accel, uint16_t decel){
     motron_send(max_accel_m3_forward, sizeof max_accel_m3_forward);                   /*max accel motor 3*/
     uint8_t max_accel_m3_reverse[] = {0x9c,motor3,0x0c,(accel & 0x7f),((accel>>7)& 0x7f)};
     motron_send(max_accel_m3_reverse, sizeof max_accel_m3_reverse);                   /*max accel motor 3*/
-    uint8_t max_decel_m3_forward[] = {0x9c,motor3,0x0e,(accel & 0x7f),((decel>>7)& 0x7f)};
+    uint8_t max_decel_m3_forward[] = {0x9c,motor3,0x0e,(decel & 0x7f),((decel>>7)& 0x7f)};
     motron_send(max_decel_m3_forward, sizeof max_decel_m3_forward);                   /*max decel motor 2*/
     uint8_t max_decel_m3_reverse[] = {0x9c,motor3,0x10,(decel & 0x7f),((decel>>7)& 0x7f)};
     motron_send(max_decel_m3_reverse, sizeof max_decel_m3_reverse);                   /*max decel motor 2*/
@@ -82,7 +82,7 @@ void motron_init(void){
     
     max_accl_decel_m1(800,800);
     max_accl_decel_m2(800,800);
-    max_accl_decel_m3(800,800);
+    max_accl_decel_m3(800,100);
 }
 
 void set_motor_all_speeds(int16_t motor1_speed, int16_t motor2_speed, int16_t motor3_speed){

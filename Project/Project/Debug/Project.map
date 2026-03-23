@@ -12,7 +12,6 @@ Discarded input sections
  .text          0x00000000        0x0 Application/main.o
  .data          0x00000000        0x0 Application/main.o
  .bss           0x00000000        0x0 Application/main.o
- .bss.msg_in    0x00000000        0x1 Application/main.o
  .text          0x00000000        0x0 Drivers/Drivers.o
  .data          0x00000000        0x0 Drivers/Drivers.o
  .bss           0x00000000        0x0 Drivers/Drivers.o
@@ -453,19 +452,19 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x107d
+.debug_info     0x00000000     0x1053
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_info    0x000005f4      0x1ee Application/main.o
- .debug_info    0x000007e2       0xfd Drivers/Drivers.o
- .debug_info    0x000008df      0x79e SRC/Motron.o
+ .debug_info    0x000005f4      0x1c4 Application/main.o
+ .debug_info    0x000007b8       0xfd Drivers/Drivers.o
+ .debug_info    0x000008b5      0x79e SRC/Motron.o
 
-.debug_abbrev   0x00000000      0x86d
+.debug_abbrev   0x00000000      0x85e
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x5a2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_abbrev  0x000005a2       0xdf Application/main.o
- .debug_abbrev  0x00000681       0xa1 Drivers/Drivers.o
- .debug_abbrev  0x00000722      0x14b SRC/Motron.o
+ .debug_abbrev  0x000005a2       0xd0 Application/main.o
+ .debug_abbrev  0x00000672       0xa1 Drivers/Drivers.o
+ .debug_abbrev  0x00000713      0x14b SRC/Motron.o
 
 .debug_line     0x00000000      0x781
  *(.debug_line .debug_line.* .debug_line_end)
@@ -480,14 +479,14 @@ END GROUP
  .debug_frame   0x00000044       0x64 Drivers/Drivers.o
  .debug_frame   0x000000a8      0x1dc SRC/Motron.o
 
-.debug_str      0x00000000      0x63c
+.debug_str      0x00000000      0x674
  *(.debug_str)
  .debug_str     0x00000000      0x208 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.7.374/gcc/dev/atmega328p/avr5/crtatmega328p.o
- .debug_str     0x00000208      0x1e7 Application/main.o
-                                0x21b (size before relaxing)
- .debug_str     0x000003ef       0x3c Drivers/Drivers.o
-                                0x19f (size before relaxing)
- .debug_str     0x0000042b      0x211 SRC/Motron.o
+ .debug_str     0x00000208      0x1e9 Application/main.o
+                                0x21d (size before relaxing)
+ .debug_str     0x000003f1       0x3c Drivers/Drivers.o
+                                0x1bc (size before relaxing)
+ .debug_str     0x0000042d      0x247 SRC/Motron.o
                                 0x3d1 (size before relaxing)
 
 .debug_loc      0x00000000      0x743

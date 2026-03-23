@@ -22,7 +22,6 @@ void i2c_write (uint8_t data){
     TWDR = data;
     TWCR = (1<<TWINT) | (1<<TWEN);
     while ((TWCR & (1<<TWINT)) == 0);
-    //_delay_us(56);
 }
 
 void i2c_stop (void){

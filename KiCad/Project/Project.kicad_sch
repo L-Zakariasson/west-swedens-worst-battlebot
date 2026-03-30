@@ -4433,7 +4433,7 @@
 		(fields_autoplaced yes)
 		(uuid "5111f12b-ec02-497c-84f1-8286806c5ea9")
 		(property "Reference" "C3"
-			(at 92.71 34.29 0)
+			(at 92.71 34.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4441,8 +4441,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 92.71 36.83 0)
+		(property "Value" "1 mF"
+			(at 92.71 36.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4750,7 +4750,7 @@
 		(fields_autoplaced yes)
 		(uuid "5902ba95-59e1-4703-9c6e-c0e23d632c4d")
 		(property "Reference" "C2"
-			(at 116.84 69.85 0)
+			(at 116.84 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4758,8 +4758,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22pF"
-			(at 116.84 72.39 0)
+		(property "Value" "22 pF"
+			(at 116.84 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6797,7 +6797,7 @@
 		(fields_autoplaced yes)
 		(uuid "f28a1a59-4dd9-4b14-b2b4-7d1c6790b3c2")
 		(property "Reference" "C1"
-			(at 128.27 69.85 0)
+			(at 128.27 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6805,8 +6805,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22pF"
-			(at 128.27 72.39 0)
+		(property "Value" "22 pF"
+			(at 128.27 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)

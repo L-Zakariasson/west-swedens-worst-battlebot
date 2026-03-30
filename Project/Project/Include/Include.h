@@ -9,7 +9,7 @@
 #ifndef INCLUDE_H_
 #define INCLUDE_H_
 
-#define motron_addr 0b00100000   /*16 << 1 addr till motron är 16 men då sista biten i i2c är för acknowledge så behöver denna sjkutas in en för att adressen ska bli rätt*/
+#define motron_addr 0b00100000   /*address to motor controller (0x10) bit shifted once to give room for acknowledge bit*/
 #define motor1 0x01
 #define motor2 0x02
 #define motor3 0x03

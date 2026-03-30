@@ -6,7 +6,7 @@
  */ 
 #include "include.h"
 
-uint8_t getCRC(uint8_t * message, uint8_t length) /*använder inte denna men e bra att ha om jag vill aktivera CRC. Cyclic redundancy check need at end of each message according to https://www.pololu.com/docs/0J84/all #3.7*/
+uint8_t getCRC(uint8_t * message, uint8_t length) /*not using this one but will be needed if i want to activate CRC. Cyclic redundancy check need at end of each message according to https://www.pololu.com/docs/0J84/all #3.7*/
 {
     uint8_t crc = 0;
     for (uint8_t i = 0; i < length; i++)

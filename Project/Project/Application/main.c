@@ -33,8 +33,8 @@ ISR (USART_RX_vect){ /*interrupt to get serial data*/
 int main(void)
 {
      
-    i2c_init(); /*setesup i2c comication in atmega*/
-    motron_init(); /*setsup motorcontroller with default settings*/
+    i2c_init(); /*setup i2c communication in atmega*/
+    motron_init(); /*setup motor controller with default settings*/
     uart_init(104); /*setup uart with 9600 baud*/
     sei();
     while (1) {   
